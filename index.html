@@ -18,14 +18,17 @@
                         black: "#000000",
                         grey: "#8d8d8d",
                         lightGrey: "#767676",
+                        silver: "#F8F9FA",
                     },
 
                     padding: {
                         '2%': '2%',
+                        '5%' : '5%',
                     },
 
                     height: {
-                        "150" : "600px"
+                        "150" : "600px",
+                        "200" : "800px",
                     },
 
                     backgroundImage: {
@@ -47,12 +50,16 @@
 </head>
 
 <body>
-    <div class="fixed top-0 left-0 w-full h-12 flex items-center justify-between px-5% bg-white">
-        <div class="flex gap-3">
-
-        </div>
+    <div class="fixed top-0 left-0 w-full h-12 flex items-center justify-between px-5% bg-white z-10 md:h-16">
         <img src="/images/RODE-Logo.svg" alt="" class="h-6">
-        <svg class="h-3.5" data-v-084759c0="" width="27" height="27" viewBox="0 0 27 27" fill="none"
+        <div class="hidden md:block md:flex md:gap-6 lg:gap-10">
+            <a href="" class="text-black text-sm lg:text-md">PRODUCTS</a>
+            <a href="" class="text-black text-sm lg:text-md">USER GUIDES</a>
+            <a href="" class="text-black text-sm lg:text-md">SOLUTIONS</a>
+            <a href="" class="text-black text-sm lg:text-md">APPAREL</a>
+            <a href="" class="text-black text-sm lg:text-md">SUPPORT</a>
+        </div>
+        <svg class="h-5 md:h-6" data-v-084759c0="" width="27" height="27" viewBox="0 0 27 27" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <path
                 d="M10.4629 20.0231C15.6892 20.0231 19.9259 15.7646 19.9259 10.5115C19.9259 5.25846 15.6892 1 10.4629 1C5.2367 1 1 5.25846 1 10.5115C1 15.7646 5.2367 20.0231 10.4629 20.0231Z"
@@ -62,7 +69,7 @@
         </svg>
     </div>
 
-    <div class="flex flex-col items-center mt-12 bg-black lg:flex-row lg:bg-hero-pattern lg:bg-center lg:justify-end lg:items-center lg:h-150">
+    <div class="flex flex-col items-center mt-12 bg-black lg:flex-row lg:bg-hero-pattern lg:bg-center bg-no-repeat lg:justify-end lg:items-center lg:h-150 2xl:bg-left">
         <img src="/images/hero-1-mobile.jpg" alt="" class="lg:hidden">
 
         <div class="flex flex-col items-center gap-3 py-4 px-2% lg:w-3/6">
@@ -79,7 +86,7 @@
         </div>
     </div>
 
-    <div class="flex flex-col items-center lg:flex-row lg:bg-hero-pattern-2 lg:bg-center lg:justify-start lg:items-center lg:h-150">
+    <div class="flex flex-col items-center lg:flex-row lg:bg-hero-pattern-2 lg:bg-center bg-no-repeat lg:justify-start lg:items-center lg:h-150 2xl:bg-left 2xl:bg-cover 2xl:h-200">
         <div class="flex flex-col items-center gap-3 py-4 px-2% lg:w-3/6">
             <img src="/images/hero-2-logo.svg" alt="" class="mb-4">
             <h1 class="text-2xl leading-tight text-center text-black leading-tight font-medium">Your Search For The
@@ -97,7 +104,7 @@
         <img src="/images/hero-2.jpg" alt="" class="hidden">
     </div>
 
-    <div class="flex flex-col items-center lg:flex-row lg:bg-hero-pattern-3 lg:bg-center lg:justify-end lg:items-center lg:h-150">
+    <div class="flex flex-col items-center lg:flex-row lg:bg-hero-pattern-3 lg:bg-center bg-no-repeat lg:justify-end lg:items-center lg:h-150 2xl:bg-left 2xl:bg-cover 2xl:h-200">
         <img src="/images/hero-3-mobile.jpg" alt="" class="lg:hidden">
         <div class="flex flex-col items-center gap-3 py-4 px-2% lg:w-3/6">
             <img src="/images/hero-3-logo.svg" alt="" class="mb-4">
@@ -115,13 +122,14 @@
         </div>
     </div>
 
-    <div class="flex flex-col items-center lg:flex-row lg:bg-hero-pattern-4 lg:bg-center lg:justify-start lg:items-center lg:h-150">
+    <div class="flex flex-col items-center lg:flex-row lg:bg-hero-pattern-4 lg:bg-center bg-no-repeat lg:justify-start lg:items-center lg:h-150 2xl:bg-left 2xl:bg-cover 2xl:h-200">
         <img src="/images/hero-4-mobile.jpg" alt="" class="lg:hidden">
         <div class="flex flex-col items-center gap-3 py-4 px-2% lg:w-3/6">
-            <img src="/images/hero-4-logo-2.svg" alt="" class="mb-4">
-            <h1 class="text-2xl leading-tight text-center text-black leading-tight font-medium">Broadcast-grade Dynamic
+            <img src="/images/hero-4-logo.svg" alt="" class="mb-4 hidden lg:block">
+            <img src="/images/hero-4-logo-2.svg" alt="" class="mb-4 lg:hidden">
+            <h1 class="text-2xl leading-tight text-center text-black leading-tight font-medium lg:text-white">Broadcast-grade Dynamic
                 Microphone</h1>
-            <p class="text-lg text-center text-grey">Give your voice that rich, broadcast sound with the PodMic. Perfect
+            <p class="text-lg text-center text-grey lg:text-white lg:opacity-50">Give your voice that rich, broadcast sound with the PodMic. Perfect
                 for livestreaming, voice-over, podcasting and gameplay.</p>
             <div class="flex items-center gap-4">
                 <a href="#" class="text-lg uppercase text-sandal font-medium">learn more <i
@@ -131,11 +139,12 @@
         </div>
     </div>
 
-    <div class="flex flex-col items-center lg:flex-row lg:bg-hero-pattern-5 lg:bg-center lg:justify-end lg:items-center lg:h-150">
+    <div class="flex flex-col items-center lg:flex-row lg:bg-hero-pattern-5 lg:bg-center bg-no-repeat lg:justify-end lg:items-center lg:h-150 2xl:bg-left 2xl:bg-cover 2xl:h-200">
         <img src="/images/hero-5-mobile.jpg" alt="" class="lg:hidden">
         <div class="flex flex-col items-center gap-3 py-4 px-2% lg:w-3/6">
-            <img src="/images/hero-5-logo-2.svg" alt="" class="mb-4">
-            <h1 class="text-2xl leading-tight text-center text-black leading-tight font-medium">Next Generation Wireless
+            <img src="/images/hero-5-logo-2.svg" alt="" class="mb-4 lg:hidden">
+            <img src="/images/hero-5-logo.svg" alt="" class="mb-4 hidden lg:block">
+            <h1 class="text-2xl leading-tight text-center text-black leading-tight font-medium lg:text-white">Next Generation Wireless
                 Audio</h1>
             <p class="text-lg text-center text-grey">The Wireless GO II is the world's most powerful and versatile
                 wireless microphone. With an unparalleled feature set and ultra-compact form factor, this is next
@@ -148,13 +157,14 @@
         </div>
     </div>
 
-    <div class="flex flex-col items-center lg:flex-row lg:bg-hero-pattern-6 lg:bg-center lg:justify-start lg:items-center lg:h-150">
+    <div class="flex flex-col items-center lg:flex-row lg:bg-hero-pattern-6 lg:bg-center bg-no-repeat lg:justify-start lg:items-center lg:h-150 2xl:bg-left bg-cover">
         <img src="/images/hero-6-mobile.jpg" alt="" class="lg:hidden">
         <div class="flex flex-col items-center gap-3 py-4 px-2% lg:w-3/6">
-            <img src="/images/hero-6-logo-2.svg" alt="" class="mb-4">
-            <h1 class="text-2xl leading-tight text-center text-black leading-tight font-medium">Compact Sound,
+            <img src="/images/hero-6-logo-2.svg" alt="" class="mb-4 lg:hidden">
+            <img src="/images/hero-6-logo.svg" alt="" class="mb-4 hidden lg:block">
+            <h1 class="text-2xl leading-tight text-center text-black leading-tight font-medium lg:text-white">Compact Sound,
                 Incredibly Powerful</h1>
-            <p class="text-lg text-center text-grey">The NT-USB Mini brings pristine studio sound to a compact USB
+            <p class="text-lg text-center text-grey lg:text-white lg:opacity-50">The NT-USB Mini brings pristine studio sound to a compact USB
                 microphone, and with RØDE Connect unlocking more power, more features and more control, it's the perfect
                 recording solution for podcasters, gamers and streamers.</p>
             <div class="flex items-center gap-4">
@@ -183,6 +193,40 @@
             <h1 class="text-2xl text-white text-center font-bold uppercase lg:text-5xl">accessories</h1>
         </div>
         <h1 class="text-3xl font-semibold text-center text-sandal lg:text-4xl">Latest From The RØDE Blog</h1>
+    </div>
+
+    <div class="flex flex-col gap-5 px-2% bg-silver py-5">
+        <div class="flex flex-col gap-3 md:flex-row justify-center">
+            <div class="flex flex-col gap-3 bg-white items-center justify-between py-5 md:w-full lg:w-2/6">
+                <h1 class="text-lg text-black text-center font-medium md:text-xl">The Difference Between Large-Diaphragm and Small-Diaphragm Condenser Microphones</h1>
+                <img src="/images/hero-8-1.jpeg" alt="" class="md:w-full md:h-80 md:object-cover lg:w-auto lg:h-auto">
+                <p class="text-md text-center text-black">We explore the difference between large- and small-diaphragm condenser microphones, and what each is best used for.</p>
+                <a href="#" class="text-lg uppercase text-white bg-sandal font-medium px-4 py-1 rounded-2xl">learn more</a>
+            </div>
+
+            <div class="flex flex-col gap-3 bg-white items-center justify-between py-5 md:w-full lg:w-2/6">
+                <h1 class="text-lg text-black text-center font-medium md:text-xl">What is a Condenser Microphone and When to Use One</h1>
+                <img src="/images/hero-8-2.jpg" alt="" class="md:w-full md:h-80 md:object-cover lg:w-auto lg:h-auto">
+                <p class="text-md text-center text-black">Learn more about the different types of condenser mics, how they work and the best applications for using them.</p>
+                <a href="#" class="text-lg uppercase text-white bg-sandal font-medium px-4 py-1 rounded-2xl">learn more</a>
+            </div>
+        </div>
+
+        <div class="flex flex-col gap-5 md:flex-row justify-center">
+            <div class="flex flex-col gap-3 bg-white items-center py-5 justify-between md:w-full lg:w-2/6">
+                <h1 class="text-lg text-black text-center font-medium md:text-xl">Firmware Version 1.0.7 for the RØDECaster Pro II is Available Now</h1>
+                <img src="/images/hero-8-3.jpg" alt="" class="md:w-full md:h-80 md:object-cover lg:w-auto lg:h-auto">
+                <p class="text-md text-center text-black">Firmware version 1.0.7 includes key feature additions, such as custom routing for USB and Bluetooth outputs, and more.</p>
+                <a href="#" class="text-lg uppercase text-white bg-sandal font-medium px-4 py-1 rounded-2xl">learn more</a>
+            </div>
+
+            <div class="flex flex-col gap-3 bg-white items-center py-5 justify-between md:w-full lg:w-2/6">
+                <h1 class="text-lg text-black text-center font-medium md:text-xl">The RØDECaster Pro II Is Shipping Now</h1>
+                <img src="/images/hero-8-4.jpg" alt="" class="md:w-full md:h-80 md:object-cover lg:w-auto lg:h-auto">
+                <p class="text-md text-center text-black">The world's most powerful all-in-one audio solution for content creators is now available worldwide.</p>
+                <a href="#" class="text-lg uppercase text-white bg-sandal font-medium px-4 py-1 rounded-2xl">learn more</a>
+            </div>
+        </div> 
     </div>
 </body>
 
